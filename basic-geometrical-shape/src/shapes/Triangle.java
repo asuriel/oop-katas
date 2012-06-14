@@ -1,3 +1,5 @@
+package shapes;
+
 public class Triangle {
 
     private double height;
@@ -10,5 +12,10 @@ public class Triangle {
 
     public double calculateArea() {
         return width * height / 2;
+    }
+
+    public Rectangle boundingRectangle(){
+        Rectangle bound = new Rectangle(width,height);
+        return bound;
     }
 }

@@ -1,3 +1,5 @@
+package shapes;
+
 public class Rectangle {
     private double width;
     private double height;
@@ -9,6 +11,4 @@ public class Rectangle {
     public double calculateArea(){
         return width*height;
     }
-
-
 }
