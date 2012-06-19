@@ -1,9 +1,9 @@
 package tddshapes;
 
-public class Triangle {
+public class Triangle extends Shape{
 
-    private final double height;
-    private final double width;
+    private double height;
+    private double width;
 
     public Triangle(double height, double width) {
         this.height = height;
@@ -14,7 +14,10 @@ public class Triangle {
         return height * width / 2;
     }
 
-    public Rectangle boundingRectangle() {
+    public Rectangle boundingRectangle(){
         return new Rectangle(height, width);
     }
+
+
+
 }

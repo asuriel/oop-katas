@@ -1,8 +1,9 @@
 package tddshapes;
 
-public class Rectangle {
-    private final double height;
-    private final double width;
+public class Rectangle extends Shape{
+
+    private double height;
+    private double width;
 
     public Rectangle(double height, double width) {
         this.height = height;
@@ -13,10 +14,17 @@ public class Rectangle {
         return width * height;
     }
 
-    public boolean equal(Rectangle other) {
-        if ((this.height == other.height) && (this.width == other.width)) {
+    //will only compare width and height of another rectangle...not accurate
+    public boolean sameAs(Rectangle other) {
+        if ((this.height == other.height && this.width == other.width)
+                || (this.height == other.width && this.width == other.height))
+        {
             return true;
         }
         return false;
     }
+    public Rectangle boundingRectangle() {
+        return this;
+    }
+
 }

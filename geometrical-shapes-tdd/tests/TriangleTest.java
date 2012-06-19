@@ -22,7 +22,7 @@ public class TriangleTest {
 
         Rectangle bounding = triangle.boundingRectangle();
         Rectangle tester = new Rectangle(10, 5);
-        assertTrue(bounding.equal(tester));
+        assertTrue(bounding.sameAs(tester));
 
     }
 }
