@@ -1,6 +1,6 @@
 package tddshapes;
 
-public abstract class Shape {
+public interface Shape {
 
     public abstract double calculateArea();
 

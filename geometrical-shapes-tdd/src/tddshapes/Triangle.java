@@ -1,6 +1,6 @@
 package tddshapes;
 
-public class Triangle extends Shape{
+public class Triangle implements Shape{
 
     private double height;
     private double width;
